@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #3B250F;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-mono: var(--font-bungee-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3B250F;
+    --foreground: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #3B250F;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Bungee, Helvetica, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
